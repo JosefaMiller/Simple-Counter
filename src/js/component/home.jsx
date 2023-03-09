@@ -4,21 +4,20 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+const Home = ({segundos}) => {
+	let string = segundos.toString()
+	let unidad = string[string.length -1]
+	let decena = string[string.length -2]
+	let centena = string[string.length -3]
+	let unidadMil = string[string.length -4]
+
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<button className="btn btn-warning" ><i class="fa-solid fa-heart"></i></button>
+			<button className="btn btn-warning">{ unidadMil==undefined? "0": unidadMil }</button>
+			<button className="btn btn-warning">{ centena==undefined? "0": centena }</button>
+			<button className="btn btn-warning">{ decena==undefined? "0": decena }</button>
+			<button className="btn btn-warning">{ unidad==undefined? "0": unidad }</button>
 		</div>
 	);
 };
