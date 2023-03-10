@@ -4,7 +4,7 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = ({segundos}) => {
+const SecondsCounter = ({segundos}) => {
 	let string = segundos.toString()
 	let unidad = string[string.length -1]
 	let decena = string[string.length -2]
@@ -13,7 +13,7 @@ const Home = ({segundos}) => {
 
 	return (
 		<div className="text-center">
-			<button className="btn btn-warning" ><i class="fa-solid fa-heart"></i></button>
+			<button className="btn btn-warning" ><i class="fa-regular fa-heart"></i></button>
 			<button className="btn btn-warning">{ unidadMil==undefined? "0": unidadMil }</button>
 			<button className="btn btn-warning">{ centena==undefined? "0": centena }</button>
 			<button className="btn btn-warning">{ decena==undefined? "0": decena }</button>
@@ -22,4 +22,4 @@ const Home = ({segundos}) => {
 	);
 };
 
-export default Home;
+export default SecondsCounter;

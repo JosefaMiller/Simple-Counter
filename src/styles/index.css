@@ -9,13 +9,35 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: #f7c18f;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.text-center {
+    margin-top: 15%;
+}
+
+
 .btn {
-    background-color: rgb(219, 126, 181);
-    width: 120px;
-    height: 200px;
+    background-color: rgb(54, 34, 17);
+    width: 130px;
+    height: 220px;
     border-color: black;
     border: 1px solid;
     cursor: pointer;
     padding: 5px;
     margin: 3px;
+    font-size: 80px;
+    font-family: 'Noto Serif Display', serif;
+    color: rgb(255, 255, 255);
 }

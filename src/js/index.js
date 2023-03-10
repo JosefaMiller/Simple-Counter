@@ -6,12 +6,12 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import SecondsCounter from "./component/SecondsCounter.jsx";
 
 let tiempo = 0;
 setInterval(() =>{
     console.log(tiempo);
-    ReactDOM.render(<Home segundos={tiempo}/>, document.querySelector("#app"));
+    ReactDOM.render(<SecondsCounter segundos={tiempo}/>, document.querySelector("#app"));
     tiempo++
 },500)
 
